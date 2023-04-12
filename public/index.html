@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Candidate Upload</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h4>Add candidates to database</h4>
+    <div class="container">
+      
+      
+      <form id="upload-form" action="/candidates/upload" method="post" enctype="multipart/form-data">
+
+        <input type="file" id="file-input" name="file" accept=".xlsx" />
+        <p>upload a .xlxc or .xlx file here</p>
+        <button id="button" type="submit">Upload</button>
+      </form>
+      <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
